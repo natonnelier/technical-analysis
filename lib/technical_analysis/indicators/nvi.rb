@@ -49,7 +49,7 @@ module TechnicalAnalysis
     # @param data [Array] Array of hashes with keys (:date_time, :close, :volume)
     #
     # @return [Array<NviValue>] An array of NviValue instances
-    def self.calculate(data)
+    def self.calculate(data, options = {})
       Validation.validate_numeric_data(data, :close, :volume)
       Validation.validate_length(data, min_data_size({}))
       Validation.validate_date_time_key(data)

@@ -48,7 +48,7 @@ module TechnicalAnalysis
     #
     # @param data [Array] Array of hashes with keys (:date_time, :high, :low, :close, :volume)
     # @return [Array<AdiValue>] An array of AdiValue instances
-    def self.calculate(data)
+    def self.calculate(data, options = {})
       Validation.validate_numeric_data(data, :high, :low, :close, :volume)
       Validation.validate_date_time_key(data)
 

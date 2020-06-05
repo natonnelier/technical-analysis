@@ -30,6 +30,7 @@ module TechnicalAnalysis
         TechnicalAnalysis::Dlr,
         TechnicalAnalysis::Dpo,
         TechnicalAnalysis::Dr,
+        TechnicalAnalysis::Ema,
         TechnicalAnalysis::Eom,
         TechnicalAnalysis::Fi,
         TechnicalAnalysis::Ichimoku,
