@@ -93,7 +93,7 @@ module TechnicalAnalysis
     # @return [Float] the lower_bound calculation value
     attr_accessor :lower_bound
 
-    def initialize(date_time: nil, upper_bound: nil, lower_bound: ninl)
+    def initialize(date_time: nil, upper_bound: nil, lower_bound: nil)
       @date_time = date_time
       @upper_bound = upper_bound
       @lower_bound = lower_bound
